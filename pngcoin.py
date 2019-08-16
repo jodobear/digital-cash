@@ -30,7 +30,7 @@ class PNGCoin:
         return pickle.dumps(self)
 
     @classmethod
-    def deserialize(cls, serialized):
+    def deserialize(cls, serialized):  # what is cls?
         return pickle.loads(serialized)
 
     def to_disk(self, filename):
