@@ -30,7 +30,7 @@ class PNGCoin:
         return pickle.dumps(self)
 
     @classmethod
-    def deserialize(cls, serialized):  # what is cls?
+    def deserialize(cls, serialized):  # what is the classmethod decorator? What's cls?
         return pickle.loads(serialized)
 
     def to_disk(self, filename):
